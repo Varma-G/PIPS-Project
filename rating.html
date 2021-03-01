@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		body{
+			margin: 0px;
+
+		}
+		.problem
+		{
+			
+			width: 100%;
+			height: 200px;
+			border-bottom: solid black 2px;
+
+
+		}
+		.feedback{
+			
+			width: 320px;
+			height: 50px;
+			margin: 0px;
+			position: absolute;
+			right: -90px;
+			top:50px;			
+			
+		}
+		ul
+		{
+			margin: 0px
+		}
+		ul li{
+			margin: 5px;
+			display: inline-block;
+			
+		}
+		ul li image
+		{
+			font-size:16px;
+			border: 0px;
+			margin: 0px 8px;
+			padding: 8px 15px;
+			border-radius: 10px;
+			
+			
+		}
+
+		
+		ul li p{
+			margin: 0px 7px;
+			font-size: 20px;
+		}
+		#like
+		{
+			
+			width: 30px;
+			background-color: none;
+			height: 30px;
+			background-size: 30px 30px;
+		}
+		#dislike
+		{
+			
+			width: 30px;
+			height: 30px;
+			background-size: 30px 30px;
+		}
+		#rating
+		{
+			
+			width: 30px;
+			height: 30px;
+			background-size: 30px 30px;
+		}
+		#text
+		{
+			height: 100px;
+			width: 700px;
+		}
+		#sub
+		{
+			margin-left: 900px;
+			top:30px;
+			padding: 8px 12px;
+			font-size: 15px;
+			border: none;
+			background: lightgrey;
+			color: green;
+			border-radius: 8px;
+		}
+		#sub:hover
+		{
+			background: skyblue;
+			color: white;
+			cursor: pointer;
+			box-shadow: 2px 2px 5px black;
+
+		}
+	</style>
+	<script type="text/javascript">
+		var i=0;
+		function inc(argument) {
+			i++;
+			document.getElementById(argument).innerHTML=i;
+
+		}
+	</script>
+</head>
+<body>
+	<div class="problem">
+		<h4>problem</h4>
+		<h6>solution </h6>
+		<textarea id="text"></textarea>
+		<div class="feedback">
+			<ul>
+				<li><p id='rat'>1</p></li>
+				<li><p id='lik'>1</p></li>
+				<li><p id='dis'>1</p></li>
+				<br>
+				<li><image id="rating" src='rating.jpeg' onclick="inc('rat')" ></li>
+				
+				<li><image id="like" src='like.png' onclick="inc('lik')" ></li>
+				
+				<li><image id="dislike" src='dislike.png' onclick="inc('dis')" ></li>
+				
+			</ul>
+		</div>
+		<input type="button" id="sub" value="submit">
+	</div>
+	<div class="problem">
+		
+	</div>
+	<div class="problem">
+		
+	</div>
+	<div class="problem">
+		
+	</div>
+	<div class="problem">
+		
+	</div>
+	<div class="problem">
+		
+	</div>
+</body>
+</html>

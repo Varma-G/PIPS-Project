@@ -1,0 +1,159 @@
+</!DOCTYPE html>
+<html>
+<head>
+	<title>main</title>
+	<style type="text/css">
+		#solved
+		{
+		
+			padding: 10px 15px;
+			font-size: 17px;
+			border: none;
+			background: lightgrey;
+			color: green;
+			margin: 0px 0px 0px 83%;
+			border-radius: 8px;
+
+		}
+		#solved:hover{
+			background: green;
+			color: white;
+			cursor: pointer;
+			box-shadow: 2px 2px 5px black;
+		}
+		#textarea{
+			margin:10px;
+			width: 500px;
+			height: 150px;
+			border: solid grey 2px;
+			font-size: 20px;
+		}
+		#problems{
+			margin:10px;
+			padding: 10px 15px;
+			font-size: 17px;
+			border: none;
+			background: lightgrey;
+			color: green;
+			border-radius: 8px;
+		}
+		#problems:hover{
+			background: red;
+			color: white;
+			cursor: pointer;
+			box-shadow: 2px 2px 5px black;
+		}
+		#image
+		{
+			
+			padding: 10px 15px;
+			font-size: 17px;
+			
+		}
+		select
+		{
+			
+			padding: 10px 15px;
+			font-size: 17px;
+		}
+		option
+		{
+			padding: 20px;
+			font-size: 18px;
+		}
+		option:nth-child(even)
+		{
+			background: lightgrey;
+		}
+		#submit
+		{
+			
+			padding: 10px 15px;
+			font-size: 17px;
+			border: none;
+			background: lightgrey;
+			color: green;
+			border-radius: 8px;
+			margin:10px 0px 0px 200px;
+
+		}
+		#submit:hover
+		{
+			background: red;
+			color: white;
+			cursor: pointer;
+			box-shadow: 2px 2px 5px black;
+		}
+		#left
+		{
+			width: 500px;
+			padding: 50px;
+			height: auto;
+			
+		}
+		#top{
+			margin: 20px;
+		}
+		#iframe
+		{
+			position: absolute;
+			top:70px;
+			margin: 30px;
+			width:95%;
+			height:80%;
+			display: none;
+			box-shadow: 0px 0px 10px black;
+			background-color: white;
+
+		}
+		iframe
+		{
+			width:100%;
+			height:100%;
+			border: none;
+			margin: 10px;
+			
+		}
+		body
+		{
+			background-image:url('leaves_line.jpg');
+			background-size: 600px;
+		}
+		
+	</style>
+	<script type="text/javascript">
+		
+		function Solved() {
+			document.getElementById('left').style.display='none';
+			document.getElementById('iframe').style.display='block';
+		}
+	</script>
+</head>
+<body>
+	<form>
+		<div id='top'>
+			<button id='Problems'>Problems</button>
+			<input type="button" value="Solved" id='solved' onclick="Solved()">
+		</div>
+
+			<div id='left'>
+				
+				<textarea id='textarea' placeholder="text here....."></textarea>
+				<input id='image' type="file" name="image" accept="image/*">
+				<select name="category">
+					<option value="">Municipal</option>
+					<option value="">Agricultural</option>
+					<option value="">rwv</option>
+					<option value="">df</option>
+					<option value="">fwd</option>
+					<option value="">faa</option>
+				</select>
+				<input type="submit" id='submit' name="submit">
+			</div>
+		
+		<div id='iframe'>
+			<iframe src="rating.html" name="sovedproblems"></iframe>
+		</div>
+	</form>
+</body>
+</html>
